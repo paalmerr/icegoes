@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:,">
+  <title>Twizzle Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./config.js"></script>
+</head>
+<body>
+  <header class="top">
+    <h1>Twizzle <span>Admin</span></h1>
+    <nav id="tabs" hidden>
+      <button data-tab="events" class="on">Events</button>
+      <button data-tab="athletes">Athletes</button>
+      <button data-tab="media">Listen &amp; watch</button>
+      <button data-tab="settings">Settings</button>
+    </nav>
+    <div id="who"></div>
+  </header>
+  <main id="app"><p class="muted">Loading…</p></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./admin.js"></script>
+</body>
+</html>
